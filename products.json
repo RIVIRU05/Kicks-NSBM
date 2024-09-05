@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Addidas",
+        "price":20.99,
+        "image":"image1.avif"
+    },
+    {
+        "id": 2,
+        "name": "New Balance",
+        "price":25.99,
+        "image":"image2.webp"
+    },
+    {
+        "id": 3,
+        "name": "Nike Air Max",
+        "price":32.99,
+        "image":"image 3.png"
+    },
+    {
+        "id": 4,
+        "name": "Addidas",
+        "price":20.99,
+        "image":"image1.avif"
+    },
+    {
+        "id": 5,
+        "name": "New Balance",
+        "price":20.99,
+        "image":"image2.avif"
+    },
+    {
+        "id": 6,
+        "name": "Nike x Combo",
+        "price":20.99,
+        "image":"image3.avif"
+    }

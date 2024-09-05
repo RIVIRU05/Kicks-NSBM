@@ -1,0 +1,242 @@
+.gradient-background{
+    background: linear-gradient(300deg,  #2e7c98, #353bd4);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+    
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+  @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .backgroundvid {
+      background-image: url('Screen\ Recording\ 2024-08-25\ at\ 18.08.06\ \(online-video-cutter.com\).mp4');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+  }
+  .backgroundvid video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+    .wht{
+        
+        font-family: 'Victor Mono', monospace;
+    }
+    .navbar a{
+        color: #FFFFFF;
+        
+    }
+    .home{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    font-family: 'Victor Mono', monospace;
+    height: 70vh;
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .btn{
+        align-items: center;
+        display: inline;
+    }
+    /* CSS */
+    .button-48 {
+      appearance: none;
+      background-color: black;
+      border-width: 0;
+      box-sizing: border-box;
+      color: #faf8f8;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Clarkson,Helvetica,sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1em;
+      margin: 0;
+      opacity: 1;
+      outline: 0;
+      padding: 1.5em 2.2em;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-rendering: geometricprecision;
+      text-transform: uppercase;
+      transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+    
+    .button-48:before {
+      animation: opacityFallbackOut .5s step-end forwards;
+      backface-visibility:visible;
+      background:linear-gradient(300deg,  #79949e, #353bd4);
+      clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translateZ(0);
+      transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+      width: 100%;
+      
+    }
+
+    .button-48:hover{
+      transform:scale(1.5);
+    }
+    
+    .button-48:hover:before {
+      animation: opacityFallbackIn 0s step-start forwards;
+      
+      clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+    }
+    
+    .button-48:after {
+      background-color: #FFFFFF;
+    }
+    
+    .button-48 span {
+      z-index: 1;
+      position: relative;
+    }
+    .brandsimg {
+        mix-blend-mode: color-burn;     
+       
+    }
+    @keyframes appear {
+      from{
+        opacity: 0;
+        transform: translateX(-100%);
+          
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0%);
+      }
+
+      
+    }
+    .hiddenjs {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  .un{
+    -o-transition-delay: 100ms;
+  }
+  .dos{
+    -o-transition-delay: 200ms;
+  }
+  .tres{
+    -o-transition-delay: 300ms;
+  }
+  .quat{
+    -o-transition-delay: 400ms;
+  }
+
+  
+  .showw {
+      animation: appear 0.5s forwards;
+  }
+.intro{
+  height: 90vh;
+}
+.floback{
+
+    -webkit-background-clip: text;
+    background-clip:border-box;
+    
+    color: white;
+            
+   
+}
+
+.sum{
+  height: 50vh;;
+}
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
