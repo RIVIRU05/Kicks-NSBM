@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.gradient-background{
+    background: linear-gradient(300deg,  #2e7c98, #353bd4);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+    
+  }
+.navbar-brand{
+    margin-left: 1rem;
+}
+.heading {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.heading h1 {
+    font-size: 48px;
+    color: #37474f;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    font-size: 22px;
+    color: #57717c;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    background-color: #eff4f6e3;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(108, 108, 225, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    background-color: rgba(111, 179, 231, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.content h2 {
+    color: #37474f;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content p {
+    color: #607d8b;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #001f8f85;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #341b9a;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .image-container {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
